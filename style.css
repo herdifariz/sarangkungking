@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=REM:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    font-family: 'Caveat', cursive;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    /* margin-right: 50px; */
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellowgreen;
+    padding: 20px 40px;
+}
+
+.navbar-groups {
+    display: flex;
+    column-gap: 40px;
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    font-size: 24px;
+}
+
+.navbar-list a:hover {
+    color: white;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger-icon, #toggler {
+    display: none;
+}
+
+.container {
+    font-family: 'REM', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px;
+}
+
+.bg-main {
+    background-image: url(img/bg1.jpg);
+    background-size: cover;
+    height: 90vh;
+    color: white;
+    font-weight: bold;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px black;
+}
+
+.content {
+    margin: 30px 60px;
+    padding: 30px;
+    display: flex;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 5px 10px;
+}
+
+.text-content {
+    text-align: center;
+    width: 100%;
+}
+
+.content img {
+    width: 300px;
+    object-fit: contain;
+}
+
+.btn-reserve {
+    margin: 20px auto;
+    padding: 20px;
+    width: 200px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: 300ms;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-reserve:hover {
+    background-color: yellowgreen;
+    transition: 300ms;
+    color: black;
+}
+
+.menu-groups {
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-between;
+    margin: 50px;
+    gap: 50px;
+}
+
+.menu-item {
+    border: 1px yellow solid;
+    height: 400px;
+    width: 300px;
+    transition: 300ms;
+}
+
+.menu-item:hover{
+    border: 5px orange solid;
+    transition: 300ms;
+}
+
+.reservation-form {
+    margin: 20px 100px;
+    padding: 20px;
+    border: 1px lightgray solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-input {
+    margin: 20px;
+    text-align: left;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input input, textarea {
+    padding: 5px;
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-submit input, .btn-close {
+    margin-top: 30px;
+    padding: 10px;
+    width: 30%;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.btn-submit input:hover {
+    background-color: darkslategrey;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.7);
+    width: 100%;
+    height: 120%;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+  .popup {
+    font-family: 'Caveat', cursive;
+    font-size: 32px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    background: #fff;
+    width: 200px;
+    height: 200px;
+}
+
+.about-contact {
+    margin: 40px 100px;
+    display: flex;
+    justify-content: left;
+    border: 1px solid lightgray;
+}
+
+.about, .contact {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about {
+    width: 30%;
+    background-color: lightgray;
+}
+.contact {
+    width: 70%;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+footer {
+    background-color: yellowgreen;
+    padding: 10px 40px;
+    font-size: 20px;
+} 
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        margin: 20px 0;
+        row-gap: 10px;
+    }
+
+    .content img {
+        width: 100%;
+    }
+    
+    .bg-main {
+        text-align: center;
+    }
+
+    .navbar-groups {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .hamburger-icon {
+        display: inline-flex;
+        cursor: pointer;
+    }
+
+    #toggler:checked ~ .navbar-groups {
+        max-height: 100%;
+    }
+
+    .reservation-form {
+        margin: 20px 0;
+    }
+
+    .about-contact {
+        flex-direction: column;
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    .about, .contact {
+        width: fit-content;
+        padding: 20px;
+    }
+
+}
