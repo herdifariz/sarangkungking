@@ -264,6 +264,19 @@ footer a {
     color: inherit;
 }
 
+.typewriter {
+    animation: type 2s steps(100) infinite;
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    } 
+    to {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .content {
         flex-direction: column;

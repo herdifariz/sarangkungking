@@ -1,3 +1,44 @@
+window.addEventListener("load", () => {
+    const textElement = document.getElementById("typewriter");
+    const words = [
+        "Hello!",
+        "Welcome to Sarangkungking",
+        "Indonesia #1 Javanese Restaurant",
+    ];
+
+    let wordIndex = 0;
+    let letterIndex = 0;
+
+    function type() {
+        if (letterIndex < words[wordIndex].length) {
+            textElement.textContent += words[wordIndex][letterIndex];
+            letterIndex++;
+            setTimeout(type, 100);
+        } else {
+            setTimeout(erase, 1500);
+        }
+    }
+
+    function erase() {
+        if (letterIndex > 0) {
+            textElement.textContent = words[wordIndex].substring(
+                0,
+                letterIndex - 1
+            );
+            letterIndex--;
+            setTimeout(erase, 50);
+        } else {
+            wordIndex++;
+            if (wordIndex >= words.length) {
+                wordIndex = 0;
+            }
+            setTimeout(type, 300);
+        }
+    }
+
+    type();
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     const iconFood = document.querySelector(".collapsible-icon-food");
     const iconDrink = document.querySelector(".collapsible-icon-drink");
