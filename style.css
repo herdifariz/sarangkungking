@@ -95,8 +95,10 @@ body {
     width: 100%;
 }
 
-.content img {
-    width: 300px;
+.content-img {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
     object-fit: contain;
 }
 
@@ -164,6 +166,14 @@ body {
     justify-content: space-between;
 }
 
+.btn-collapsible-food:hover, .btn-collapsible-drink:hover{
+    background-color: #6D8B74;
+}
+
+.active {
+    background-color: #6D8B74;
+}
+
 .reservation-form {
     background-color: white;
     margin: 20px 100px;
@@ -198,12 +208,12 @@ body {
     border-radius: 10px;
     border: none;
     color: white;
-    background-color: black;
+    background-color: #5F7161;
     cursor: pointer;
 }
 
 .btn-submit input:hover {
-    background-color: darkslategrey;
+    background-color: #6D8B74;
 }
 
 .overlay {
@@ -235,7 +245,7 @@ body {
 }
 
 .about-contact {
-    margin: 30px 100px;
+    margin: 20px 100px;
     display: flex;
     justify-content: left;
     border: 1px solid #D0C9C0;

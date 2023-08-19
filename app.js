@@ -1,7 +1,6 @@
 window.addEventListener("load", () => {
     const textElement = document.getElementById("typewriter");
     const words = [
-        "Hello!",
         "Welcome to Sarangkungking",
         "Indonesia #1 Javanese Restaurant",
     ];
@@ -47,19 +46,23 @@ document.addEventListener("DOMContentLoaded", function () {
     btnFood.addEventListener("click", function () {
         if (btnFood.nextElementSibling.style.display === "none") {
             btnFood.nextElementSibling.style.display = "block";
+            btnFood.classList.add("active");
             iconFood.innerText = "-";
         } else {
             btnFood.nextElementSibling.style.display = "none";
+            btnFood.classList.remove("active");
             iconFood.innerText = "+";
         }
     });
     btnDrink.addEventListener("click", function () {
         if (btnDrink.nextElementSibling.style.display === "none") {
             btnDrink.nextElementSibling.style.display = "block";
+            btnDrink.classList.add("active");
             iconDrink.innerText = "-";
         } else {
             btnDrink.nextElementSibling.style.display = "none";
             iconDrink.innerText = "+";
+            btnDrink.classList.remove("active");
         }
     });
 });
