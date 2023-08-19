@@ -9,17 +9,17 @@ header, footer, .navbar {
     font-family: 'Caveat', cursive;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: 700;
-    /* margin-right: 50px; */
+body {
+    background-color: #EFEAD8;
+    color: #6D8B74;
 }
+
 .navbar {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: yellowgreen;
+    background-color: #5F7161;
     padding: 20px 40px;
     position: sticky;
     top: 0;
@@ -45,6 +45,12 @@ header, footer, .navbar {
 .navbar a {
     text-decoration: none;
     color: black;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #EFEAD8;
 }
 
 .hamburger-icon, #toggler {
@@ -76,6 +82,7 @@ header, footer, .navbar {
     margin: 30px 60px;
     padding: 30px;
     display: flex;
+    background-color: white;
     border: 1px solid lightgray;
     border-radius: 10px;
     align-items: center;
@@ -97,7 +104,7 @@ header, footer, .navbar {
     margin: 20px auto;
     padding: 20px;
     width: 200px;
-    background-color: green;
+    background-color: #5F7161;
     color: white;
     border: none;
     border-radius: 10px;
@@ -108,7 +115,7 @@ header, footer, .navbar {
 }
 
 .btn-reserve:hover {
-    background-color: yellowgreen;
+    background-color: #6D8B74;
     transition: 300ms;
     color: black;
 }
@@ -122,7 +129,7 @@ header, footer, .navbar {
 }
 
 .menu-item {
-    border: 2px orange solid;
+    border: 2px #D0C9C0 solid;
     height: 400px;
     width: 300px;
     transition: 300ms;
@@ -130,7 +137,7 @@ header, footer, .navbar {
 }
 
 .menu-item:hover{
-    border: 2px orangered solid;
+    border: 2px #5F7161 solid;
     transition: 300ms;
     transform: scale(1.1);
     transition: 0.2s;
@@ -144,8 +151,8 @@ header, footer, .navbar {
 }
 
 .btn-collapsible-drink, .btn-collapsible-food {
-    background-color: #eee;
-    color: #444;
+    background-color: #5F7161;
+    color: #EFEAD8;
     cursor: pointer;
     margin-top: 10px;
     padding: 18px;
@@ -158,6 +165,7 @@ header, footer, .navbar {
 }
 
 .reservation-form {
+    background-color: white;
     margin: 20px 100px;
     padding: 20px;
     border: 1px lightgray solid;
@@ -184,7 +192,7 @@ header, footer, .navbar {
 }
 
 .btn-submit input, .btn-close {
-    margin-top: 30px;
+    margin-top: 40px;
     padding: 10px;
     width: 30%;
     border-radius: 10px;
@@ -205,7 +213,7 @@ header, footer, .navbar {
     left: 0;
     background: rgb(0, 0, 0, 0.7);
     width: 100%;
-    height: 120%;
+    height: 110%;
     z-index: 100;
     justify-content: center;
     align-items: center;
@@ -230,7 +238,7 @@ header, footer, .navbar {
     margin: 30px 100px;
     display: flex;
     justify-content: left;
-    border: 1px solid lightgray;
+    border: 1px solid #D0C9C0;
 }
 
 .about, .contact {
@@ -242,7 +250,7 @@ header, footer, .navbar {
 
 .about {
     width: 30%;
-    background-color: lightgray;
+    background-color: #D0C9C0;
 }
 .contact {
     width: 70%;
@@ -253,7 +261,8 @@ textarea {
 }
 
 footer {
-    background-color: yellowgreen;
+    background-color: #5F7161;
+    color: #EFEAD8;
     padding: 10px 40px;
     font-size: 20px;
     margin-top: auto;
